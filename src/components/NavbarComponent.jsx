@@ -102,7 +102,7 @@ export default function Navbar() {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-full px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 bg-orange-500 hover:bg-orange-400 w-20 rounded-full mx-auto"
+                    className="-mx-3 block rounded-full px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 bg-orange-500 hover:bg-orange-400 text-center mx-auto"
                   >
                     Call Me
                   </a>
