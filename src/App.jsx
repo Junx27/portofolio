@@ -1,26 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/navbar";
+import Portofolio from "./pages/Portofolio";
+import SosioalMedia from "./pages/SosioalMedia";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
-      <h1>Test CSR dan SSR</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sint
-        ipsam corporis vel vero officiis, earum accusantium dignissimos iusto
-        inventore culpa aut tempora nulla deleniti, quia quod modi consequuntur
-        aspernatur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nihil
-        quis itaque aspernatur tenetur quidem reprehenderit possimus delectus
-        sit cumque? Repellendus porro corrupti eligendi voluptas consectetur,
-        modi veritatis ea quasi!
-      </p>
+      <Navbar />
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/portofolio" Component={Portofolio} />
+        <Route path="/sosialmedia" Component={SosioalMedia} />
+      </Routes>
     </div>
   );
 }
