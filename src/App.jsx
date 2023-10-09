@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div>
+      <h1>Test CSR dan SSR</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sint
         ipsam corporis vel vero officiis, earum accusantium dignissimos iusto
