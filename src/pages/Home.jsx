@@ -6,6 +6,7 @@ import react from "../assets/images/library.png";
 import bootstrap from "../assets/images/bootstrap.png";
 import tailwind from "../assets/images/tailwind.png";
 import ai from "../assets/images/illustrator.png";
+import { gambar } from "../data/data.js";
 
 function Home() {
   return (
@@ -76,6 +77,13 @@ function Home() {
         <h1 className="text-center font-bold text-4xl lg:pt-20 pt-10 portofolio">
           Portofolio
         </h1>
+        {gambar.map((data) => {
+          return (
+            <div key={data.id}>
+              <img src={data.src} alt="" />
+            </div>
+          );
+        })}
       </div>
       {/* Portofolio end */}
     </div>

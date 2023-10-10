@@ -1,13 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Navbar from "./components/NavbarComponent";
+import NavbarComponent from "./components/NavbarComponent";
 import Portofolio from "./pages/Portofolio";
 import SosioalMedia from "./pages/SosioalMedia";
+import ButtonScrollComponent from "./components/ButtonScrollComponent";
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <NavbarComponent />
+      <ButtonScrollComponent />
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/portofolio" Component={Portofolio} />

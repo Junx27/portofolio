@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "../data/data";
@@ -6,10 +6,29 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [changeColor, setChangeColor] = useState(false);
+
+  const changeBackgroundColor = () => {
+    if (window.scrollY > 10) {
+      setChangeColor(true);
+    } else {
+      setChangeColor(false);
+    }
+  };
+  useEffect(() => {
+    changeBackgroundColor();
+    window.addEventListener("scroll", changeBackgroundColor);
+  });
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header
+        className={
+          changeColor
+            ? "inset-x-0 top-0 z-50 fixed shadow bg-white ease-out transition duration-700 delay-200"
+            : "inset-x-0 top-0 z-50 fixed bg-white"
+        }
+      >
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
@@ -40,8 +59,8 @@ export default function Navbar() {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "bg-orange-500 px-4 py-2 rounded-full text-sm font-semibold leading-6 text-gray-900"
-                    : "text-sm font-semibold leading-6 text-gray-900 px-4 py-2"
+                    ? "bg-orange-500 px-4 py-2 rounded-full text-sm font-semibold leading-6 text-black hover:text-white"
+                    : "text-sm font-semibold leading-6 text-gray-900 px-4 py-2 hover:text-orange-600"
                 }
               >
                 {item.name}
@@ -51,9 +70,22 @@ export default function Navbar() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
-              className="text-sm font-semibold leading-6 text-gray-900 bg-orange-500 hover:bg-orange-400 py-2 px-4 rounded-full"
+              className="text-sm font-semibold leading-6 text-gray-900 hover:text-orange-600"
             >
-              Call Me <span aria-hidden="true">&rarr;</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+              </svg>
             </a>
           </div>
         </nav>
@@ -91,8 +123,8 @@ export default function Navbar() {
                         isPending
                           ? "pending"
                           : isActive
-                          ? "bg-orange-500 px-4 py-2 rounded-full text-sm font-semibold leading-6 text-gray-900"
-                          : "text-sm font-semibold leading-6 text-gray-900 px-4 py-2"
+                          ? "bg-orange-500 px-4 py-2 rounded-full text-sm font-semibold leading-6 hover:text-orange-600"
+                          : "text-sm font-semibold leading-6 text-gray-900 px-4 py-2 hover:text-orange-600"
                       }
                     >
                       {item.name}
