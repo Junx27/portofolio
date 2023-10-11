@@ -35,7 +35,7 @@ function Home() {
           Skills
         </h1>
         {/* Skills */}
-        <div className="lg:w-20 w-56 md:w-20 lg:flex lg:space-x-20 grid gap-6 lg:gap-0 md:flex grid-cols-4 lg:ms-40 mx-auto md:mx-12 lg:mt-10 mt-5">
+        <div className="lg:w-20 w-auto md:w-20 lg:flex lg:space-x-20 grid gap-6 lg:gap-0 md:flex grid-cols-7 lg:ms-40 mx-3 md:mx-12 lg:mt-10 mt-5">
           <img
             src={html}
             alt=""
