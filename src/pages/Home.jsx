@@ -6,7 +6,7 @@ import react from "../assets/images/library.png";
 import bootstrap from "../assets/images/bootstrap.png";
 import tailwind from "../assets/images/tailwind.png";
 import ai from "../assets/images/illustrator.png";
-import { gambar } from "../data/data.js";
+import { gambar, pengalaman } from "../data/data.js";
 
 function Home() {
   return (
@@ -28,12 +28,12 @@ function Home() {
         </div>
       </div>
       <div className="bg-gradient-to-r from-yellow-400 to-orange-600 container-skill">
-        <h1 className="text-center font-bold text-white text-4xl lg:pt-56 pt-10 skill">
+        <h1 className="text-center font-bold text-white text-4xl pt-3 skill">
           {" "}
           Skills
         </h1>
         {/* Skills */}
-        <div className="lg:w-32 w-56 lg:flex lg:space-x-20 grid gap-6 lg:gap-0 grid-cols-2 lg:ms-7 mx-auto lg:mt-20 mt-10">
+        <div className="lg:w-32 w-56 lg:flex lg:space-x-20 grid gap-6 lg:gap-0 grid-cols-2 lg:ms-7 mx-auto lg:mt-10">
           <img
             src={html}
             alt=""
@@ -77,15 +77,49 @@ function Home() {
         <h1 className="text-center font-bold text-4xl lg:pt-20 pt-10 portofolio">
           Portofolio
         </h1>
-        {gambar.map((data) => {
-          return (
-            <div key={data.id}>
-              <img src={data.src} alt="" />
-            </div>
-          );
-        })}
+        <div className="flex justify-center gap-4 mx-10 mb-5">
+          {gambar.map((data) => {
+            return (
+              <div
+                key={data.id}
+                className="p-10 shadow hover:shadow-orange-300"
+              >
+                <img src={data.src} alt="" className="mx-auto" />
+                <h1 className="font-bold text-xl mt-3">{data.nama}</h1>
+                <p className="mt-5 text-justify">{data.deskripsi}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
       {/* Portofolio end */}
+      <div>
+        <h1 className="text-center font-bold text-4xl lg:pt-20 portofolio">
+          Pengalaman
+        </h1>
+        <div className="grid grid-cols-4 gap-10 mx-20 mb-20">
+          {pengalaman.map((data) => {
+            return (
+              <div
+                key={data.id}
+                className="shadow px-5 py-10 hover:shadow-orange-300"
+              >
+                <div className="w-10 mb-5 mx-auto">
+                  <img src={data.src} alt="" />
+                </div>
+                <hr />
+                <div className="flex justify-between items-center w-10">
+                  <h1 className="font-bold my-5 text-sm ms-3">{data.nama}</h1>
+                  <p className="text-xs ms-20">{data.jabatan}</p>
+                </div>
+                <div className="text-justify">
+                  <p>{data.deskripsi}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }
