@@ -35,6 +35,20 @@
 .portofolio:hover::after {
   transform: scaleX(0.5);
 }
+.pengalaman::after {
+  content: "";
+  display: block;
+  width: 430px;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.4rem solid orange;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.pengalaman:hover::after {
+  transform: scaleX(0.5);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

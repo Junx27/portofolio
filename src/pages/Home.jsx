@@ -94,10 +94,10 @@ function Home() {
       </div>
       {/* Portofolio end */}
       <div>
-        <h1 className="text-center font-bold text-4xl lg:pt-20 portofolio">
+        <h1 className="text-center font-bold text-4xl lg:pt-20 pengalaman">
           Pengalaman
         </h1>
-        <div className="grid grid-cols-4 gap-10 mx-20 mb-20">
+        <div className="grid grid-cols-4 gap-10 mx-20 my-20">
           {pengalaman.map((data) => {
             return (
               <div
@@ -109,8 +109,8 @@ function Home() {
                 </div>
                 <hr />
                 <div className="flex justify-between items-center w-10">
-                  <h1 className="font-bold my-5 text-sm ms-3">{data.nama}</h1>
-                  <p className="text-xs ms-20">{data.jabatan}</p>
+                  <h1 className="font-bold my-5 text-sm">{data.nama}</h1>
+                  <p className="text-xs ms-20 text-gray-300">{data.jabatan}</p>
                 </div>
                 <div className="text-justify">
                   <p>{data.deskripsi}</p>

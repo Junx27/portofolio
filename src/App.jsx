@@ -4,6 +4,7 @@ import NavbarComponent from "./components/NavbarComponent";
 import Portofolio from "./pages/Portofolio";
 import SosioalMedia from "./pages/SosioalMedia";
 import ButtonScrollComponent from "./components/ButtonScrollComponent";
+import FooterComponent from "./components/FooterComponent";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/portofolio" Component={Portofolio} />
         <Route path="/sosialmedia" Component={SosioalMedia} />
       </Routes>
+      <FooterComponent />
     </div>
   );
 }
