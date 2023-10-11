@@ -12,16 +12,14 @@
   width: 200px;
   margin: 0 auto;
   padding-bottom: 0.5rem;
-  border-bottom: 0.4rem solid yellow;
+  border-bottom: 0.4rem solid orange;
   transform: scaleX(0);
   transition: 0.2s linear;
 }
 .skill:hover::after {
   transform: scaleX(0.5);
 }
-.portofolio {
-  padding-bottom: 80px;
-}
+
 .portofolio::after {
   content: "";
   display: block;
@@ -38,7 +36,7 @@
 .pengalaman::after {
   content: "";
   display: block;
-  width: 430px;
+  width: 400px;
   margin: 0 auto;
   padding-bottom: 0.5rem;
   border-bottom: 0.4rem solid orange;

@@ -11,10 +11,12 @@ import { gambar, pengalaman } from "../data/data.js";
 function Home() {
   return (
     <div className="homepage pt-32 lg:pt-56">
-      <div className="lg:grid grid-cols-2 gap-2 items-center">
-        <div className="lg:mx-32 mx-10">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 items-center">
+        <div className="lg:mx-32 lg:mx-10 md:mx-10 mx-3 order-last">
           <h5 className="mb-1">Hallo saya,</h5>
-          <h1 className="text-4xl font-extrabold">TRI SAPTONO</h1>
+          <h1 className="lg:text-4xl md:text-3xl text-xl font-extrabold">
+            TRI SAPTONO
+          </h1>
           <p className="mt-5 text-justify">
             “ Saya seorang Junior Web Developer dan seorang mahasiswa di
             Universitas Perwira Purbalingga Program Studi Informatika, Sebagai
@@ -23,17 +25,17 @@ function Home() {
             di seluruh dunia.”
           </p>
         </div>
-        <div className="lg:mx-auto ms-6 pt-20 lg:pt-0">
+        <div className="lg:mx-auto mx-auto lg:pt-5 lg:pt-0 w-64">
           <img src={fotoprofile} alt="" />
         </div>
       </div>
-      <div className="bg-gradient-to-r from-yellow-400 to-orange-600 container-skill">
-        <h1 className="text-center font-bold text-white text-4xl pt-3 skill">
+      <div className="pt-1 pb-10">
+        <h1 className="text-center font-bold text-black lg:text-4xl md:text-3xl text-xl pt-3 skill">
           {" "}
           Skills
         </h1>
         {/* Skills */}
-        <div className="lg:w-32 w-56 lg:flex lg:space-x-20 grid gap-6 lg:gap-0 grid-cols-2 lg:ms-7 mx-auto lg:mt-10">
+        <div className="lg:w-20 w-56 md:w-20 lg:flex lg:space-x-20 grid gap-6 lg:gap-0 md:flex grid-cols-4 lg:ms-40 mx-auto md:mx-12 lg:mt-10 mt-5">
           <img
             src={html}
             alt=""
@@ -74,15 +76,15 @@ function Home() {
       </div>
       {/* Portofolio */}
       <div>
-        <h1 className="text-center font-bold text-4xl lg:pt-20 pt-10 portofolio">
+        <h1 className="text-center font-bold lg:text-4xl md:text-3xl text-xl lg:pt-20 pt-10 portofolio">
           Portofolio
         </h1>
-        <div className="flex justify-center gap-4 mx-10 mb-5">
+        <div className="lg:flex md:grid md:grid-cols-2 justify-center gap-4 lg:mx-10 mx-3 mb-5 md:mx-10">
           {gambar.map((data) => {
             return (
               <div
                 key={data.id}
-                className="p-10 shadow hover:shadow-orange-300"
+                className="lg:p-10 p-5 shadow hover:shadow-lg mt-10 lg:mt-0"
               >
                 <img src={data.src} alt="" className="mx-auto" />
                 <h1 className="font-bold text-xl mt-3">{data.nama}</h1>
@@ -94,25 +96,25 @@ function Home() {
       </div>
       {/* Portofolio end */}
       <div>
-        <h1 className="text-center font-bold text-4xl lg:pt-20 pengalaman">
+        <h1 className="text-center font-bold lg:text-4xl md:text-3xl text-xl lg:pt-20 pengalaman lg:mt-0 mt-10">
           Pengalaman
         </h1>
-        <div className="grid grid-cols-4 gap-10 mx-20 my-20">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 lg:mx-20 mx-3 my-20 md:mx-10">
           {pengalaman.map((data) => {
             return (
               <div
                 key={data.id}
-                className="shadow px-5 py-10 hover:shadow-orange-300"
+                className="shadow px-5 lg:py-10 py-2 hover:shadow-lg"
               >
-                <div className="w-10 mb-5 mx-auto">
+                <div className="lg:w-10 w-20 mb-5 mx-auto">
                   <img src={data.src} alt="" />
                 </div>
                 <hr />
-                <div className="flex justify-between items-center w-10">
-                  <h1 className="font-bold my-5 text-sm">{data.nama}</h1>
-                  <p className="text-xs ms-20 text-gray-300">{data.jabatan}</p>
+                <div className="flex justify-between my-5">
+                  <h1 className="font-bold">{data.nama}</h1>
+                  <p className="text-gray-300">{data.jabatan}</p>
                 </div>
-                <div className="text-justify">
+                <div className="text-justify lg:pb-0 pb-32">
                   <p>{data.deskripsi}</p>
                 </div>
               </div>

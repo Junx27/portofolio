@@ -59,35 +59,35 @@ export const gambar = [
 export const pengalaman = [
   {
     id: 1,
-    nama: "PT.ACC",
-    jabatan: "QualityControl",
+    nama: "ACC",
+    jabatan: "Quality",
     src: autociptacasting,
     deskripsi:
-      "Pekerjaan quality control artinya sangat mengutamakan ketelitian dalam menilai sebuah produk serta sangat menjunjung tinggi kepuasan dari konsumen terhadap produk-produk yang akan dipasarkan.",
+      "Pekerjaan quality control artinya sangat mengutamakan ketelitian dalam menilai sebuah produk.",
   },
   {
     id: 2,
-    nama: "PT.KBM",
-    jabatan: "QualityControl",
+    nama: "KBM",
+    jabatan: "Operator",
     src: kbm,
     deskripsi:
-      "Operator peralatan pengolahan kayu memantau, mengoperasikan dan mengawasi, peralatan otomatis mesin penggilingan kayu yang sudah dipotong untuk menggergaji kemudian dibuat menjadi lapisan-lapisan.",
+      "Operator peralatan pengolahan kayu memantau, mengoperasikan dan mengawasi, peralatan otomatis.",
   },
   {
     id: 3,
-    nama: "PT.TYLON",
-    jabatan: "QualityControl",
+    nama: "TYLON",
+    jabatan: "Operator",
     src: tylon,
     deskripsi:
-      "Tylon is a part of Daiho Group that is top-rank reputation in the plastics processing industry in Japan. Tylon was Incorporate in Malaysia on 9 September 1988,Nasuhiobara. Tylon from group of Daiho Group",
+      "Tylon is a part of Daiho Group that is top-rank reputation in the plastics processing industry in Japan.",
   },
   {
     id: 4,
-    nama: "PT.YURO",
-    jabatan: "QualityControl",
+    nama: "YURO",
+    jabatan: "Operator",
     src: yuro,
     deskripsi:
-      "Proses knotting dilakukan dengan berbagai cara sesuai dengan jenis bulu mata yang akan dibuat. Cara dari proses ini ialah operator mengambil 3 helai rambut",
+      "Proses knotting dilakukan dengan berbagai cara sesuai dengan jenis bulu mata yang akan dibuat.",
   },
 ];
 // data pengalaman kerja
