@@ -12,7 +12,7 @@ function Home() {
   return (
     <div className="homepage pt-32 lg:pt-56">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 items-center">
-        <div className="lg:mx-32 lg:mx-10 md:mx-10 mx-3 order-last">
+        <div className="lg:mx-32 lg:mx-10 md:mx-10 mx-3 order-last lg:order-none">
           <h5 className="mb-1">Hallo saya,</h5>
           <h1 className="lg:text-4xl md:text-3xl text-xl font-extrabold">
             TRI SAPTONO
@@ -84,7 +84,7 @@ function Home() {
             return (
               <div
                 key={data.id}
-                className="lg:p-10 p-5 shadow hover:shadow-lg mt-10 lg:mt-0"
+                className="lg:p-10 p-5 shadow hover:shadow-lg mt-10 lg:mt-20"
               >
                 <img src={data.src} alt="" className="mx-auto" />
                 <h1 className="font-bold text-xl mt-3">{data.nama}</h1>
