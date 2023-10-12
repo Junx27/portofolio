@@ -1,5 +1,5 @@
 function SosioalMedia() {
-  return <div>Sosial media</div>;
+  return <div></div>;
 }
 
 export default SosioalMedia;

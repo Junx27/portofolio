@@ -17,7 +17,7 @@ function Home() {
           <h1 className="lg:text-4xl md:text-3xl text-xl font-extrabold">
             TRI SAPTONO
           </h1>
-          <p className="mt-5 text-justify">
+          <p className="mt-5 text-justify indent-8">
             “ Saya seorang Junior Web Developer dan seorang mahasiswa di
             Universitas Perwira Purbalingga Program Studi Informatika, Sebagai
             software developer, saya memiliki kesempatan untuk berkontribusi
@@ -88,7 +88,9 @@ function Home() {
               >
                 <img src={data.src} alt="" className="mx-auto" />
                 <h1 className="font-bold text-xl mt-3">{data.nama}</h1>
-                <p className="mt-5 text-justify">{data.deskripsi}</p>
+                <p className="mt-5 text-justify indent-8 pb-20">
+                  {data.deskripsi}
+                </p>
               </div>
             );
           })}
@@ -110,11 +112,11 @@ function Home() {
                   <img src={data.src} alt="" />
                 </div>
                 <hr />
-                <div className="flex justify-between my-5">
+                <div className="flex justify-between items-end my-5">
                   <h1 className="font-bold">{data.nama}</h1>
-                  <p className="text-gray-300">{data.jabatan}</p>
+                  <p className="text-gray-300 text-xs">{data.jabatan}</p>
                 </div>
-                <div className="text-justify lg:pb-0 pb-32">
+                <div className="text-justify lg:pb-10 pb-32 indent-8">
                   <p>{data.deskripsi}</p>
                 </div>
               </div>
