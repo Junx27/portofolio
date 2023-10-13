@@ -57,10 +57,22 @@ function FooterComponent() {
             kirim
           </button>
           <div className="flex flex-row mt-5 text-2xl">
-            <FontAwesomeIcon icon={faFacebook} className="mx-3" />
-            <FontAwesomeIcon icon={faWhatsapp} className="mx-3" />
-            <FontAwesomeIcon icon={faInstagram} className="mx-3" />
-            <FontAwesomeIcon icon={faTiktok} className="mx-3" />
+            <FontAwesomeIcon
+              icon={faFacebook}
+              className="mx-3 hover:text-orange-500"
+            />
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              className="mx-3 hover:text-orange-500"
+            />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="mx-3 hover:text-orange-500"
+            />
+            <FontAwesomeIcon
+              icon={faTiktok}
+              className="mx-3 hover:text-orange-500"
+            />
           </div>
         </div>
       </div>

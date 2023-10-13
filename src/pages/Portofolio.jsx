@@ -3,8 +3,7 @@ import { gambar } from "../data/data";
 
 function Portofolio() {
   return (
-    <div>
-      Ini portofolio
+    <div className="mb-20 lg:mx-20">
       {gambar && gambar.map((data) => <Card key={data.id} card={data} />)}
     </div>
   );

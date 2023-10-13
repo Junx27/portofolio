@@ -20,8 +20,8 @@ export const navigation = [
   },
   {
     id: 3,
-    name: "Sosial Media",
-    href: "/sosialmedia",
+    name: "Tentang Saya",
+    href: "/tentangsaya",
   },
 ];
 // ini data navbar
@@ -37,36 +37,26 @@ export const gambar = [
       "Situs yang mengumpulkan beragam lowongan pekerjaan dari para pemberi kerja atau recruiter. Job board juga menjadi tempat mencari dan melamar peluang kerja. Umumnya, situs job board gratis diakses oleh pencari kerja. serta memberikan kesempatan untuk dapat bekerja",
     deskripsi2:
       "Loker adalah singkatan dari lowongan kerja atau job vacancy dalam bahasa Indonesia. Ini merujuk kepada pekerjaan atau posisi yang tersedia dalam suatu perusahaan atau organisasi yang sedang mencari karyawan baru untuk mengisi posisi tersebut. Deskripsi loker adalah informasi yang disediakan oleh pihak perusahaan atau perekrut yang menjelaskan tentang pekerjaan yang tersedia, persyaratan yang dibutuhkan, tanggung jawab pekerjaan, gaji atau kompensasi yang ditawarkan, dan berbagai detail lainnya yang relevan.",
-    des1: "Pencarian Pekerjaan: Pencari kerja dapat mencari pekerjaan berdasarkan kata kunci, lokasi, industri, perusahaan, atau kriteria lainnya",
-    des2: "Filter Pencarian: Pencari kerja dapat menggunakan filter seperti tipe pekerjaan (penuh waktu, paruh waktu, kontrak), gaji, tingkat pendidikan.",
-    des3: "Daftar Pekerjaan Terbaru: Menampilkan daftar pekerjaan terbaru yang ditambahkan ke situs web.",
-    des4: "Notifikasi Pekerjaan: Pencari kerja dapat mengatur notifikasi untuk menerima pemberitahuan tentang pekerjaan baru yang sesuai dengan kriteria",
-    des5: "Profil Pencari Kerja: Pencari kerja dapat membuat profil pribadi dengan riwayat kerja, pendidikan, dan keterampilan",
-    des6: "Lamaran Online: Kemampuan untuk mengirimkan lamaran pekerjaan langsung melalui situs web.",
-    des7: "Penyimpanan Lamaran: Pencari kerja dapat menyimpan lamaran mereka untuk menggunakannya di pekerjaan lain.",
-    des8: "Evaluasi Perusahaan: Memberikan ulasan dan peringkat perusahaan oleh karyawan atau mantan karyawan.",
-    des9: "Basis Data Pekerjaan: Perusahaan atau perekrut dapat mengakses basis data pekerjaan untuk mencari calon yang sesuai",
-    des10:
-      "Informasi Perusahaan: Informasi lengkap tentang perusahaan yang mencari karyawan, termasuk sejarah, budaya perusahaan, dan manfaat.",
-    des11:
-      "Forum atau Komunitas: Area di mana pencari kerja dapat berdiskusi tentang pengalaman mereka, pertanyaan pekerjaan, dan berbagi tips.",
-    des12:
-      "Panduan Karir: Artikel, saran, dan panduan untuk membantu pencari kerja memaksimalkan peluang mereka.",
-    des13:
-      "Chat atau Pesan: Pencari kerja dapat berkomunikasi langsung dengan perusahaan atau perekrut.",
-    des14:
-      "Analitik: Alat analitik untuk perusahaan atau perekrut untuk melacak kinerja postingan pekerjaan mereka.",
-    des15:
-      "Aksesibilitas Seluler: Situs web loker yang responsif dan dapat diakses dengan mudah melalui perangkat seluler.",
-    des16:
-      "Keamanan Data: Perlindungan data pribadi dan rincian lamaran pekerjaan yang disimpan di situs web.",
-    des17:
-      "Berbagi Pekerjaan: Kemampuan untuk dengan mudah berbagi postingan pekerjaan di media sosial atau melalui email.",
-    des18:
-      "Langganan Berbayar: Untuk perusahaan atau perekrut yang ingin menonjolkan postingan pekerjaan mereka atau mengakses fitur premium.",
-    des19: "Peta Lokasi: Peta interaktif yang menunjukkan lokasi pekerjaan.",
-    des20:
-      "Integrasi Media Sosial: Kemampuan untuk menghubungkan profil media sosial pencari kerja atau berbagi postingan pekerjaan di platform media.",
+    des1: "Pencarian Pekerjaan",
+    des2: "Filter Pencarian",
+    des3: "Daftar Pekerjaan Terbaru",
+    des4: "Notifikasi Pekerjaan",
+    des5: "Profil Pencari Kerja",
+    des6: "Lamaran Online",
+    des7: "Penyimpanan Lamaran",
+    des8: "Evaluasi Perusahaan",
+    des9: "Basis Data Pekerjaan",
+    des10: "Informasi Perusahaan",
+    provider: "Junx Web Dev",
+    size: "100Mb",
+    kategori: "Web Loker",
+    kompability: "Windows, Mac, Linux",
+    language: "Indonesia",
+    age: "4+",
+    inapp: "no",
+    copy: "JWD",
+    github: "https://github.com/Junx27/client",
+    preview: "https://dinkominfo-project.vercel.app/",
   },
   {
     id: 2,
@@ -75,6 +65,28 @@ export const gambar = [
     src: nuin,
     deskripsi:
       "Suatu transaksi ekononi yang dilakukan oleh penjual dan pembeli secara bersama-sama menggunakan media elektronik yang berasal dari internet dengan membuat kontrak perjanjian tentang pengiriman dan harga suatu barang serta menyelesaikan transaksi melalui pembayaran dan pengiriman",
+    deskripsi2:
+      "E-commerce, singkatan dari electronic commerce (perdagangan elektronik), merujuk pada proses pembelian dan penjualan produk atau layanan melalui internet. Ini melibatkan berbagai transaksi bisnis yang dilakukan secara online, yang dapat mencakup penjualan produk fisik, produk digital, layanan, atau bahkan informasi.",
+    des1: "Pencarian Produk",
+    des2: "Katalog Produk",
+    des3: "Kategori dan Subkategori",
+    des4: "Keranjang Belanja",
+    des5: "Checkout",
+    des6: "Manajemen Akun Pengguna",
+    des7: "Pembayaran Online",
+    des8: "Pengiriman dan Pelacakan",
+    des9: "Penilaian dan Ulasan",
+    des10: "Promosi dan Diskon",
+    provider: "Junx Web Dev",
+    size: "150Mb",
+    kategori: "E-Commerce",
+    kompability: "Windows, Mac, Linux",
+    language: "Indonesia",
+    age: "3+",
+    inapp: "no",
+    copy: "JWD",
+    github: "https://github.com/Junx27/E-Commerce",
+    preview: "https://e-commerce-tau-beryl.vercel.app/",
   },
   {
     id: 3,
@@ -83,6 +95,28 @@ export const gambar = [
     src: muara,
     deskripsi:
       "Suatu cara yang digunakan untuk memperoleh data dan informasi dalam bentuk buku, arsip, dokumen, tulisan angka dan gambar yang berupa laporan serta keterangan yang dapat mendukung penelitian. Dokumentasi digunakan untuk mengumpulkan data kemudian ditelaah.",
+    deskripsi2:
+      "Sebuah website dokumentasi adalah situs web yang dibuat khusus untuk tujuan menyediakan dokumentasi atau informasi rinci tentang produk, layanan, proyek, perangkat lunak, atau topik tertentu. Tujuan utama dari jenis situs web ini adalah untuk membantu pengguna atau pemangku kepentingan memahami, menggunakan, atau mengakses informasi yang relevan dengan topik atau subjek tertentu. Berikut adalah beberapa contoh umum dari jenis website dokumentasi",
+    des1: "Pencarian",
+    des2: "Tata Letak yang Responsif",
+    des3: "Daftar Konten",
+    des4: "Halaman Tautan Cepat",
+    des5: "Panduan Pengguna",
+    des6: "Gambar dan Grafik",
+    des7: "Komunitas Dukungan:",
+    des8: "Pembaruan Berkala",
+    des9: "Pencetakan",
+    des10: "Sistem Komentar",
+    provider: "Junx Web Dev",
+    size: "90Mb",
+    kategori: "Web Dokumentasi",
+    kompability: "Windows, Mac, Linux",
+    language: "Indonesia",
+    age: "4,2+",
+    inapp: "no",
+    copy: "JWD",
+    github: "https://github.com/Junx27/kknppm_munjul",
+    preview: "https://kknppm-munjul.vercel.app/",
   },
 ];
 // data gambar
