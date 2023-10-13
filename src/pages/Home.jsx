@@ -10,7 +10,7 @@ import { gambar, pengalaman } from "../data/data.js";
 
 function Home() {
   return (
-    <div className="homepage pt-32 lg:pt-56">
+    <div className="homepage pt-32 lg:pt-56 dark:bg-black dark:text-white">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 items-center">
         <div className="lg:mx-32 lg:mx-10 md:mx-10 mx-3 order-last lg:order-none">
           <h5 className="mb-1">Hallo saya,</h5>
@@ -30,7 +30,7 @@ function Home() {
         </div>
       </div>
       <div className="pt-1 pb-10">
-        <h1 className="text-center font-bold text-black lg:text-4xl md:text-3xl text-xl pt-3 skill">
+        <h1 className="text-center font-bold text-black dark:text-white lg:text-4xl md:text-3xl text-xl pt-3 skill">
           {" "}
           Skills
         </h1>
@@ -84,7 +84,7 @@ function Home() {
             return (
               <div
                 key={data.id}
-                className="lg:p-10 p-5 shadow hover:shadow-lg mt-10 lg:mt-20"
+                className="lg:p-10 p-5 shadow dark:border-orange-500 dark:border hover:shadow-lg mt-10 lg:mt-20"
               >
                 <img src={data.src} alt="" className="mx-auto" />
                 <h1 className="font-bold text-xl mt-3">{data.nama}</h1>
@@ -101,15 +101,20 @@ function Home() {
         <h1 className="text-center font-bold lg:text-4xl md:text-3xl text-xl lg:pt-20 pengalaman lg:mt-0 mt-10">
           Pengalaman
         </h1>
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 lg:mx-20 mx-3 my-20 md:mx-10">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 lg:px-20 px-3 py-20 md:px-10">
           {pengalaman.map((data) => {
             return (
               <div
                 key={data.id}
-                className="shadow px-5 lg:py-10 py-2 hover:shadow-lg"
+                className="shadow px-5 lg:py-5 py-2 hover:shadow-lg dark:border-orange-500 dark:border"
               >
-                <div className="lg:w-10 w-20 mb-5 mx-auto">
-                  <img src={data.src} alt="" />
+                <div className="mb-5 text-center dark:bg-white">
+                  <img
+                    src={data.src}
+                    alt=""
+                    style={{ width: "70px", height: "70px" }}
+                    className="mx-auto py-5"
+                  />
                 </div>
                 <hr />
                 <div className="flex justify-between items-end my-5">

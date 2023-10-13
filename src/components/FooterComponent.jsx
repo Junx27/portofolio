@@ -7,17 +7,17 @@ import {
   faTiktok,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import dicoding from "../assets/images/learn/dicoding.jpg";
-import idcamp from "../assets/images/learn/idcamp.jpg";
+import dicoding from "../assets/images/learn/dicoding.png";
+import idcamp from "../assets/images/learn/idcamp.png";
 function FooterComponent() {
   return (
-    <div className="lg:mx-20 ms-10 mb-10">
+    <div className="lg:px-20 ps-10 pb-10 dark:bg-black dark:text-white">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-4">
         <div className="lg:mx-5">
           <h1 className="text-md font-bold">LEARN PATH</h1>
           <div className="w-20">
-            <img src={dicoding} alt="" />
-            <img src={idcamp} alt="" />
+            <img src={dicoding} alt="" className="dark:bg-white mt-5" />
+            <img src={idcamp} alt="" className="dark:bg-white mt-5" />
           </div>
         </div>
         <div className="lg:mx-5 lg:mt-0 mt-10 md:mt-0">
@@ -51,7 +51,7 @@ function FooterComponent() {
           <input
             type="email"
             placeholder="your@mail.com"
-            className="border border-orange-500 px-3 py-1 rounded-l-full w-40"
+            className="border border-orange-500 px-3 py-1 rounded-l-full w-40 dark:bg-black"
           />
           <button className="ps-2 pe-2 bg-orange-500 py-1 border border-orange-500 hover:border-orange-400 rounded-r-full text-white hover:bg-orange-400">
             kirim

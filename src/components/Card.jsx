@@ -1,15 +1,12 @@
+/* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-  faArrowRight,
-  faCheck,
-  faEye,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faEye } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 function Card({ card }) {
   return (
     <div>
-      <div className="lg:flex md:grid md:grid-cols-1 justify-center gap-4 lg:mx-10 mx-3 mb-5 md:mx-10">
+      <div className="lg:flex md:grid md:grid-cols-1 justify-center gap-4  lg:px-10 px-3 pb-5 md:px-10">
         <div
           key={card.id}
           className="lg:p-10 p-5 shadow hover:shadow-lg mt-10 lg:mt-20"
